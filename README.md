@@ -91,31 +91,6 @@ npm run build
 npm run preview
 ```
 
-## Деплой на GitHub Pages
-
-### Автоматический деплой
-```bash
-npm run deploy
-```
-
-### Ручной деплой
-1. Создайте репозиторий на GitHub
-2. Настройте GitHub Pages в настройках репозитория:
-   - Source: Deploy from a branch
-   - Branch: gh-pages
-   - Folder: / (root)
-3. Запустите деплой:
-   ```bash
-   npm run build
-   npm run deploy
-   ```
-
-### Настройка для вашего репозитория
-Если ваш репозиторий называется по-другому, измените в `vite.config.ts`:
-```typescript
-base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
-```
-
 ## Структура проекта
 
 ```
